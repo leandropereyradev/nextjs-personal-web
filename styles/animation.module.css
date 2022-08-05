@@ -1,0 +1,32 @@
+.animation_container {
+    background-color: rgb(19, 19, 19);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+}
+
+.image_container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.image_container img {
+    width: 200px;
+}
+
+@media screen and (min-width: 700px) {
+    .image_container img {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .image_container img{
+        width: 400px;
+    }
+
+}

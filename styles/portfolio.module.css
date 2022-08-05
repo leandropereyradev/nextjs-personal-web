@@ -1,0 +1,232 @@
+.portfolio_container {
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 90%;
+    margin: -2rem auto;
+}
+
+.portfolio_images {
+    order: -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.portfolio_image_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio_image_container img {
+    border-radius: 5px;
+}
+
+.portfolio_image_container .alicia,
+.portfolio_image_container .celia {
+    width: 140px;
+}
+
+.portfolio_image_container .yoga {
+    width: 110px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+.portfolio_image_container .leandro {
+    width: 110px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.portfolio_title_container {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.portfolio_title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.portfolio_subtitle {
+    font-size: 1rem;
+    margin-top: 1.5rem !important;
+}
+
+.portfolio_lines_container_firstLine,
+.portfolio_lines_container_secondLine {
+    height: 2px;
+    width: 100%;
+    background-color: aliceblue;
+    margin: 0.8rem 0;
+}
+
+@media screen and (min-width: 700px) {
+    .portfolio_image_container {
+        margin: auto auto;
+        gap: 2rem;
+    }
+
+    .portfolio_image_container .alicia,
+    .portfolio_image_container .celia {
+        width: 220px;
+        height: 299px;
+    }
+
+    .portfolio_image_container .yoga {
+        width: 180px;
+        height: 245px;
+        margin-top: 4rem;
+    }
+
+    .portfolio_image_container .leandro {
+        width: 180px;
+        height: 245px;
+        margin-top: 0.5rem;
+        margin-left: 2.5rem;
+    }
+
+    .portfolio_title {
+        font-size: 5rem;
+    }
+
+    .portfolio_subtitle {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .portfolio_container {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .portfolio_images {
+        order: 0;
+        justify-content: flex-end;
+        margin-top: 0rem;
+    }
+
+    .portfolio_image_container {
+        gap: 1rem;
+        margin-top: 5rem;
+    }
+
+    .portfolio_image_container .alicia,
+    .portfolio_image_container .celia {
+        width: 170px;
+        height: 231px;
+    }
+
+    .portfolio_image_container .yoga {
+        width: 140px;
+        height: 190px;
+        margin-left: 1rem;
+        margin-top: 2rem;
+    }
+
+    .portfolio_image_container .leandro {
+        width: 140px;
+        height: 190px;
+        margin-top: 1rem;
+        margin-left: 1rem;
+    }
+
+    .portfolio_title_container {
+        margin-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: left;
+    }
+
+    .portfolio_title {
+        margin-bottom: 0;
+    }
+
+    .portfolio_subtitle {
+        font-size: 1.7rem;
+    }
+
+    .portfolio_lines_container_firstLine,
+    .portfolio_lines_container_secondLine {
+        width: 10rem;
+        margin: 1rem 0;
+    }
+
+    .portfolio_button {
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .portfolio_lines_container_secondLine {
+        margin-left: 4rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .portfolio_images {
+        margin-top: 0rem;
+    }
+
+    .portfolio_image_container .alicia,
+    .portfolio_image_container .celia {
+        width: 180px;
+        height: 245px;
+    }
+
+    .portfolio_image_container .leandro,
+    .portfolio_image_container .yoga {
+        width: 150px;
+        height: 204px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .portfolio_image_container {
+        order: 0;
+        gap: 1rem;
+        margin-top: 5rem;
+    }
+
+    .portfolio_image_container .alicia,
+    .portfolio_image_container .celia {
+        width: 270px;
+        height: 367px;
+    }
+
+    .portfolio_image_container .yoga {
+        width: 230px;
+        height: 313px;
+        margin-top: 3.5rem;
+    }
+
+    .portfolio_image_container .leandro {
+        width: 230px;
+        height: 313px;
+        margin-left: 2.5rem;
+    }
+
+    .portfolio_title_container {
+        margin-bottom: 4rem;
+    }
+
+    .portfolio_title {
+        font-size: 6rem;
+    }
+
+    .portfolio_subtitle {
+        font-size: 2.7rem;
+    }
+
+    .portfolio_lines_container_firstLine,
+    .portfolio_lines_container_secondLine {
+        width: 13rem;
+    }
+}

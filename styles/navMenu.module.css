@@ -1,0 +1,39 @@
+.navMenu_menu_container {
+    display: none;
+}
+
+@media screen and (min-width: 1000px) {
+    .navMenu_menu_container {
+        display: flex;
+    }
+
+    .navMenu_menu_container ul {
+        padding-inline-start: 0.8rem;
+    }
+
+    .navMenu_container {
+        background-color: rgb(19, 19, 19);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navMenu_menu_container a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 1rem;
+        transition: all .2s ease-in-out;
+    }
+
+    .navMenu_menu_container a:hover {
+        color: #ff2c8f;
+        font-weight: bold;
+    }
+
+    .navMenu_menu_container li {
+        display: inline-block;
+        list-style: none;
+    }
+
+}
