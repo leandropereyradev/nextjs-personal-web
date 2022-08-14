@@ -72,8 +72,8 @@ const AboutPop = () => {
                 ease: "easeOut",
                 delay: 0.5,
               }}
-              src="/images/html5.svg"
-              alt="html"
+              src="/images/nextjs.svg"
+              alt="nextjs"
             />
             <motion.img
               initial={{
@@ -90,8 +90,8 @@ const AboutPop = () => {
                 ease: "easeOut",
                 delay: 0.7,
               }}
-              src="/images/css.svg"
-              alt="css"
+              src="/images/mongo.svg"
+              alt="mongo"
             />
           </div>
           <div className={styles.skill_container}>
@@ -110,8 +110,8 @@ const AboutPop = () => {
                 ease: "easeOut",
                 delay: 0.9,
               }}
-              src="/images/js.svg"
-              alt="js"
+              src="/images/html5.svg"
+              alt="html"
             />
             <motion.img
               initial={{
@@ -128,8 +128,8 @@ const AboutPop = () => {
                 ease: "easeOut",
                 delay: 1.1,
               }}
-              src="/images/wordpress.svg"
-              alt="wp"
+              src="/images/css.svg"
+              alt="css"
             />
             <motion.img
               initial={{
@@ -145,6 +145,62 @@ const AboutPop = () => {
                 duration: 0.8,
                 ease: "easeOut",
                 delay: 1.3,
+              }}
+              src="/images/js.svg"
+              alt="js"
+            />
+          </div>
+          <div className={styles.skill_container}>
+            <motion.img
+              initial={{
+                scale: 2,
+                opacity: 0,
+              }}
+              whileInView={{
+                scale: 1,
+                opacity: 1,
+              }}
+              viewport={{ once: true, amount: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+                delay: 1.5,
+              }}
+              src="/images/wordpress.svg"
+              alt="wordpress"
+            />
+            <motion.img
+              initial={{
+                scale: 2,
+                opacity: 0,
+              }}
+              whileInView={{
+                scale: 1,
+                opacity: 1,
+              }}
+              viewport={{ once: true, amount: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+                delay: 1.7,
+              }}
+              src="/images/tailwind.svg"
+              alt="tailwind"
+            />
+            <motion.img
+              initial={{
+                scale: 2,
+                opacity: 0,
+              }}
+              whileInView={{
+                scale: 1,
+                opacity: 1,
+              }}
+              viewport={{ once: true, amount: 0 }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+                delay: 1.9,
               }}
               src="/images/git.svg"
               alt="git"

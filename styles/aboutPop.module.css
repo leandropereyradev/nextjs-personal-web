@@ -49,28 +49,31 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
     gap: 2rem;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .skill_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 4rem 4rem 4rem;
+    justify-content: space-between;
     gap: 3rem;
 }
 
 .aboutPop_skills_container img {
-    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
 }
 
 @media screen and (min-width: 700px) {
-    
+
     .aboutPop_title {
         line-height: 2rem !important;
         font-size: 1.5rem;
     }
-    
+
     .aboutPop_info_title_title {
         line-height: 3.5rem !important;
         font-size: 2.5rem;
@@ -90,17 +93,22 @@
     }
 
     .skill_container {
+        grid-template-columns: 5rem 5rem 5rem;
         gap: 5rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
 
     .aboutPop_skills_container h3 {
-        margin: 3rem 0;
+        padding: 4rem 0 3rem 0;
         font-size: 2rem;
     }
 
+    .aboutPop_skills_container {
+        padding-bottom: 4rem;
+    }
+
     .aboutPop_skills_container img {
-        width: 5rem;
+        height: 5rem;
     }
 }
 
@@ -144,5 +152,15 @@
 
     .skill_container {
         gap: 8rem;
+        grid-template-columns: 7rem 7rem 7rem;
+    }
+
+    .aboutPop_skills_container h3 {
+        padding: 4rem 0 3rem 0;
+        font-size: 2rem;
+    }
+
+    .aboutPop_skills_container img {
+        height: 7rem;
     }
 }
