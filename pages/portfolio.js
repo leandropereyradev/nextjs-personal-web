@@ -96,9 +96,9 @@ const Portfolio = () => {
                 ease: "easeOut",
                 delay: 0.3,
               }}
-              className={styles.celia}
-              alt="celia"
-              src="/images/celiamartinperez-min.webp"
+              className={styles.bienestar}
+              alt="bienestar"
+              src="/images/bienestar-min.webp"
             />
             <motion.img
               initial={{
@@ -132,9 +132,9 @@ const Portfolio = () => {
                 ease: "easeOut",
                 delay: 0.9,
               }}
-              src="/images/leandropereyra-min.webp"
-              alt="leandro"
-              className={styles.leandro}
+              src="/images/peces-min.webp"
+              alt="peces"
+              className={styles.peces}
             />
             <motion.img
               initial={{

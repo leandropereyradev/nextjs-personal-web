@@ -1,7 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
 import { motion } from "framer-motion";
 import { FormattedMessage } from "react-intl";
+import Link from "next/link";
 import styles from "../styles/aboutPop.module.css";
+
+const variants = {
+  hidden: { scale: 2, opacity: 0 },
+  visible: (index) => ({
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.5, ease: "easeOut", delay: 0 + 0.2 * index },
+  }),
+};
 
 const AboutPop = () => {
   return (
@@ -39,174 +49,41 @@ const AboutPop = () => {
         <div className={styles.aboutPop_skills_container}>
           <h3>Skills Trainee</h3>
           <div className={styles.skill_container}>
-            <motion.img
-              initial={{
-                scale: 2,
-                opacity: 0,
-              }}
-              whileInView={{
-                scale: 1,
-                opacity: 1,
-              }}
-              viewport={{ once: true, amount: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 0.3,
-              }}
-              src="/images/react.svg"
-              alt="react"
-            />
-            <motion.img
-              initial={{
-                scale: 2,
-                opacity: 0,
-              }}
-              whileInView={{
-                scale: 1,
-                opacity: 1,
-              }}
-              viewport={{ once: true, amount: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 0.5,
-              }}
-              src="/images/nextjs.svg"
-              alt="nextjs"
-            />
-            <motion.img
-              initial={{
-                scale: 2,
-                opacity: 0,
-              }}
-              whileInView={{
-                scale: 1,
-                opacity: 1,
-              }}
-              viewport={{ once: true, amount: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 0.7,
-              }}
-              src="/images/mongo.svg"
-              alt="mongo"
-            />
-          </div>
-          <div className={styles.skill_container}>
-            <motion.img
-              initial={{
-                scale: 2,
-                opacity: 0,
-              }}
-              whileInView={{
-                scale: 1,
-                opacity: 1,
-              }}
-              viewport={{ once: true, amount: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 0.9,
-              }}
-              src="/images/html5.svg"
-              alt="html"
-            />
-            <motion.img
-              initial={{
-                scale: 2,
-                opacity: 0,
-              }}
-              whileInView={{
-                scale: 1,
-                opacity: 1,
-              }}
-              viewport={{ once: true, amount: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 1.1,
-              }}
-              src="/images/css.svg"
-              alt="css"
-            />
-            <motion.img
-              initial={{
-                scale: 2,
-                opacity: 0,
-              }}
-              whileInView={{
-                scale: 1,
-                opacity: 1,
-              }}
-              viewport={{ once: true, amount: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 1.3,
-              }}
-              src="/images/js.svg"
-              alt="js"
-            />
-          </div>
-          <div className={styles.skill_container}>
-            <motion.img
-              initial={{
-                scale: 2,
-                opacity: 0,
-              }}
-              whileInView={{
-                scale: 1,
-                opacity: 1,
-              }}
-              viewport={{ once: true, amount: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 1.5,
-              }}
-              src="/images/wordpress.svg"
-              alt="wordpress"
-            />
-            <motion.img
-              initial={{
-                scale: 2,
-                opacity: 0,
-              }}
-              whileInView={{
-                scale: 1,
-                opacity: 1,
-              }}
-              viewport={{ once: true, amount: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 1.7,
-              }}
-              src="/images/tailwind.svg"
-              alt="tailwind"
-            />
-            <motion.img
-              initial={{
-                scale: 2,
-                opacity: 0,
-              }}
-              whileInView={{
-                scale: 1,
-                opacity: 1,
-              }}
-              viewport={{ once: true, amount: 0 }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 1.9,
-              }}
-              src="/images/git.svg"
-              alt="git"
-            />
+            {["react", "nextjs", "mongo", "html5", "css", "js", "wordpress", "tailwind", "git"].map((tec, index) => (
+              <motion.img
+                key={index}
+                variants={variants}
+                custom={index}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, amount: 0 }}
+                src={`/images/${tec}.svg`}
+                alt={tec}
+              />
+            ))}
           </div>
         </div>
+      </div>
+      <div className={styles.aboutPop_links}>
+        <Link href="/cv">
+          <motion.a
+            initial={{
+              opacity: 0,
+              scale: 1.5,
+            }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+            }}
+            viewport={{ once: true, amount: 0 }}
+            transition={{
+              duration: 0.5,
+              ease: "easeInOut",
+            }}
+          >
+            <FormattedMessage id="aboutPop_cv" defaultMessage="AboutPop" />
+          </motion.a>
+        </Link>
       </div>
     </div>
   );

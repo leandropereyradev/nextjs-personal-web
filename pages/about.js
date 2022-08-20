@@ -83,11 +83,9 @@ const About = () => {
           </div>
           <motion.div
             initial={{
-              scale: 0,
               opacity: 0,
             }}
             animate={{
-              scale: 1,
               opacity: 1,
             }}
             transition={{
@@ -97,7 +95,7 @@ const About = () => {
             }}
             className={styles.about_image_container}
           >
-            <img src="/images/personal.svg" alt="logo" />
+            <img src="/images/photo.png" alt="logo" />
           </motion.div>
         </div>
         <AboutPop />

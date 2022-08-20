@@ -3,6 +3,16 @@ import { motion } from "framer-motion";
 import { FormattedMessage } from "react-intl";
 import Layout from "../components/Layout";
 import styles from "../styles/contact.module.css";
+import { contactIcon } from "./api/contactIcons";
+
+const variants = {
+  hidden: { scale: 3, opacity: 0 },
+  visible: (index) => ({
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.8, ease: "easeOut", delay: 1.5 + 0.2 * index },
+  }),
+};
 
 const Contact = () => {
   return (
@@ -68,66 +78,20 @@ const Contact = () => {
             className={styles.contact_icons_line}
           />
           <div className={styles.contact_icons_icons}>
-            <motion.a
-              initial={{
-                scale: 3,
-                opacity: 0,
-              }}
-              animate={{
-                scale: 1,
-                opacity: 1,
-              }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 1.5,
-              }}
-              href="mailto:contacto@leandropereyra.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/images/mail.svg" alt="mail" className={styles.iconContact} />
-            </motion.a>
-            <motion.a
-              initial={{
-                scale: 3,
-                opacity: 0,
-              }}
-              animate={{
-                scale: 1,
-                opacity: 1,
-              }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 1.7,
-              }}
-              href="https://github.com/leandropereyradev"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/images/github.svg" alt="github" className={styles.iconContact} />
-            </motion.a>
-            <motion.a
-              initial={{
-                scale: 3,
-                opacity: 0,
-              }}
-              animate={{
-                scale: 1,
-                opacity: 1,
-              }}
-              transition={{
-                duration: 0.8,
-                ease: "easeOut",
-                delay: 1.9,
-              }}
-              href="https://www.linkedin.com/in/leandropereyradev"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img src="/images/linkedin.svg" alt="linkedin" className={styles.iconContact} />
-            </motion.a>
+            {contactIcon.map(({ ref, icon }, index) => (
+              <motion.a
+                key={index}
+                variants={variants}
+                custom={index}
+                initial="hidden"
+                animate="visible"
+                href={ref}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={`/images/${icon}.svg`} alt={icon} className={styles.iconContact} />
+              </motion.a>
+            ))}
           </div>
           <motion.div
             initial={{
@@ -141,7 +105,7 @@ const Contact = () => {
             transition={{
               duration: 0.8,
               ease: "easeOut",
-              delay: 0.9,
+              delay: 0.7,
             }}
             className={styles.contact_icons_line}
           />

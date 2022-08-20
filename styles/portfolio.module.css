@@ -24,7 +24,7 @@
 }
 
 .portfolio_image_container .alicia,
-.portfolio_image_container .celia {
+.portfolio_image_container .bienestar {
     width: 140px;
 }
 
@@ -34,14 +34,14 @@
     margin-top: 2rem;
 }
 
-.portfolio_image_container .leandro {
+.portfolio_image_container .peces {
     width: 110px;
     margin-top: 1rem;
     margin-left: 1rem;
 }
 
 .portfolio_title_container {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
     text-align: center;
 }
 
@@ -70,7 +70,7 @@
     }
 
     .portfolio_image_container .alicia,
-    .portfolio_image_container .celia {
+    .portfolio_image_container .bienestar {
         width: 220px;
         height: 299px;
     }
@@ -79,9 +79,10 @@
         width: 180px;
         height: 245px;
         margin-top: 4rem;
+        margin-left: 0;
     }
 
-    .portfolio_image_container .leandro {
+    .portfolio_image_container .peces {
         width: 180px;
         height: 245px;
         margin-top: 0.5rem;
@@ -118,7 +119,7 @@
     }
 
     .portfolio_image_container .alicia,
-    .portfolio_image_container .celia {
+    .portfolio_image_container .bienestar {
         width: 170px;
         height: 231px;
     }
@@ -130,7 +131,7 @@
         margin-top: 2rem;
     }
 
-    .portfolio_image_container .leandro {
+    .portfolio_image_container .peces {
         width: 140px;
         height: 190px;
         margin-top: 1rem;
@@ -176,12 +177,12 @@
     }
 
     .portfolio_image_container .alicia,
-    .portfolio_image_container .celia {
+    .portfolio_image_container .bienestar {
         width: 180px;
         height: 245px;
     }
 
-    .portfolio_image_container .leandro,
+    .portfolio_image_container .peces,
     .portfolio_image_container .yoga {
         width: 150px;
         height: 204px;
@@ -196,7 +197,7 @@
     }
 
     .portfolio_image_container .alicia,
-    .portfolio_image_container .celia {
+    .portfolio_image_container .bienestar {
         width: 270px;
         height: 367px;
     }
@@ -204,13 +205,13 @@
     .portfolio_image_container .yoga {
         width: 230px;
         height: 313px;
-        margin-top: 3.5rem;
+        margin-top: 2.5rem;
     }
 
-    .portfolio_image_container .leandro {
+    .portfolio_image_container .peces {
         width: 230px;
         height: 313px;
-        margin-left: 2.5rem;
+        margin-left: 2rem;
     }
 
     .portfolio_title_container {

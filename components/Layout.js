@@ -5,10 +5,17 @@ import NavMenu from "./NavMenu";
 const Layout = ({ children }) => {
   return (
     <>
-        <NavMenu />
-        {children}
-        <Nav />
-        <Footer />
+      <NavMenu
+        menues={[
+          ["/", "navMenu-home"],
+          ["/portfolio", "navMenu-portfolio"],
+          ["/about", "navMenu-about"],
+          ["/contact", "navMenu-contact"],
+        ]}
+      />
+      {children}
+      <Nav />
+      <Footer />
     </>
   );
 };

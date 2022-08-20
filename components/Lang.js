@@ -21,7 +21,7 @@ const Lang = () => {
     setLang(!lang);
     setTimeout(() => {
       setModal(false);
-    }, 4000);
+    }, 2000);
   };
   return (
     <div>

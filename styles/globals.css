@@ -54,3 +54,7 @@ h6 {
   margin-inline-start: unset !important;
   margin-inline-end: unset !important;
 }
+
+ul {
+  padding-inline-start: 0;
+}

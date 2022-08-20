@@ -1,0 +1,263 @@
+.cv_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1.5rem;
+}
+
+.cv_title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cv_skills_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cv_skills_subtitle {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 1.25rem;
+    text-align: center;
+}
+
+.cv_skills_container{
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(11px) saturate(100%);
+    -webkit-backdrop-filter: blur(11px) saturate(100%);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    padding: 3rem 1rem 1rem 0;
+}
+
+.cv_skills_container ul {
+    padding-left: 2rem;
+}
+
+.cv_skills_container li {
+    list-style: disc;
+    padding-bottom: 0.75rem;
+}
+
+.cv_link_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cv_link {
+    display: flex;
+    justify-content: space-around;
+    margin: 2.5rem 0;
+}
+
+.cv_contact_container{
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(11px) saturate(100%);
+    -webkit-backdrop-filter: blur(11px) saturate(100%);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    padding-top: 3rem;
+}
+
+.iconContact,
+.iconMap {
+    width: 3rem;
+    height: 3rem;
+}
+
+.iconContact {
+    cursor: pointer;
+}
+
+.cv_link a:last-child {
+    display: none;
+}
+
+.cv_link label:last-child {
+    display: none;
+}
+
+.cv_download {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 4rem 0;
+}
+
+.cv_download a {
+    border-radius: 5px;
+    padding: 7px 7px;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(255, 0, 149);
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+    .cv_title {
+        font-size: 5rem;
+        padding: 3rem;
+    }
+    .cv_skills_container{
+        width: 85%;
+        margin: 0 auto;
+        padding: 3rem 1.5rem 1rem 1rem;
+    }
+
+    .cv_skills_container ul {
+        padding-left: 4rem;
+    }
+
+    .cv_skills_container li {
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .cv_skills_subtitle {
+        font-size: 2rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .cv_link {
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    .cv_contact_container{
+        margin: 0 auto;
+        width: 85%;
+        padding-top: 3rem;
+    }
+
+    .iconContact,
+    .iconMap {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .cv_skills_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 85%;
+        padding: 3rem 2rem 1rem 3.5rem;
+        margin: 2rem auto;
+    }
+
+    .cv_skills_subtitle {
+        font-size: 1.5rem;
+        text-align: start;
+        padding-bottom: 1rem;
+    }
+
+    .cv_skills_container ul {
+        padding-left: 1.2rem;
+    }
+
+    .cv_skills_container li {
+        list-style: disc;
+        padding-bottom: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    .cv_link_container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cv_skills_subtitle_container h2 {
+        text-align: center;
+    }
+
+    .cv_contact_container{
+        width: 100%;
+        padding: 1.5rem 0 0 0 ;
+    }
+
+    .cv_link {
+        width: 100%;
+        margin: 3rem 0;
+        flex-direction: column;
+    }
+
+    .cv_link label:last-child {
+        display: flex;
+    }
+
+    .cv_link label {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 1.5rem;
+    }
+
+    .cv_link label a {
+        font-size: 0.8rem;
+    }
+
+    .iconContact,
+    .iconMap {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .cv_link a:last-child {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .cv_contact_container{
+        width: 85%;
+        padding: 1.5rem 3rem 0 0 ;
+    }
+    .cv_link label a {
+        font-size: 1rem;
+    }
+
+    .cv_download a {
+        padding: 7px 14px;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .cv_title {
+        font-size: 6rem;
+        padding: 4rem;
+    }
+
+    .cv_skills_subtitle {
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .cv_skills_container li {
+        padding-bottom: 1.8rem;
+        font-size: 1.5rem;
+    }
+
+    .cv_contact_container{
+        width: 85%;
+    }
+
+    .cv_link label a {
+        font-size: 1.5rem;
+    }
+
+    .iconContact,
+    .iconMap {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}

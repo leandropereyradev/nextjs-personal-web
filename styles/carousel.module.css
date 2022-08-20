@@ -106,13 +106,15 @@
     text-decoration: none;
     color: #fff;
     background-color: rgb(255, 0, 149);
-    margin-right: 2rem;
     font-size: 0.8rem;
     z-index: 99;
 }
 
 .carousel_links {
-    margin-top: 1rem;
+    margin: 1rem auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
 }
 
 .carousel_right,
@@ -149,12 +151,12 @@
         font-size: 2.5rem;
         margin-bottom: 1rem;
     }
-    
+
     .carousel_titulo h5 {
         font-size: 1.3rem;
         margin: 1.5rem 0 !important;
     }
-    
+
     .carousel_titulo h6 {
         margin: 1.5rem 0 3.5rem 0 !important;
         font-size: 1.2rem;
@@ -163,6 +165,10 @@
 
     .carousel_links a {
         font-size: 1.5rem;
+    }
+
+    .carousel_links {
+        width: 60%;
     }
 }
 
@@ -204,15 +210,20 @@
     .carousel_titulo h3 {
         font-size: 2.3rem;
     }
-    
+
     .carousel_titulo h5 {
         margin: 1.5rem 0 0 0 !important;
         margin: 0 0 1rem 0;
     }
-    
+
     .carousel_titulo h6 {
         margin: 1.5rem 0 2.5rem 0 !important;
         margin: 1rem 0;
+    }
+    .carousel_links {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 1.5rem;
     }
 
     .carousel_links a {
