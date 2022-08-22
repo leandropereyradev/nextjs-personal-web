@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import styles from "../styles/lang.module.css";
+import styles from "../styles/lang.module.scss";
 import Animation from "./Animation";
 import Earth from "./Earth";
 import Espana from "./Espana";
@@ -37,13 +37,13 @@ const Lang = () => {
           ease: "easeOut",
           delay: 1.8,
         }}
-        className={styles.navMenu_Lang}
+        className={styles.navMenu}
       >
         <Earth openModal={() => openLang()} />
       </motion.div>
       {lang && (
-        <div className={styles.navMenu_Lang_container}>
-          <div className={styles.navMenu_flag_container} onClick={() => openModal()}>
+        <div>
+          <div className={styles.navMenu_flags} onClick={() => openModal()}>
             <motion.div
               initial={{
                 scale: 0,

@@ -1,0 +1,109 @@
+.about {
+  display: grid;
+  grid-template-rows: repeat(7, 1fr);
+  padding-inline: 2rem;
+  height: 100vh;
+  &_image_container {
+    order: -1;
+    grid-row: 1/7;
+    width: 85%;
+    // max-width: 350px;
+    justify-self: center;
+    align-self: center;
+    img {
+      width: 100%;
+    }
+  }
+
+  &_title {
+    grid-row: 7/8;
+    margin-bottom: 1.5rem;
+    align-self: flex-end;
+    text-align: center;
+    width: 80%;
+    margin-inline: auto;
+    h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+    }
+    h2 {
+      font-size: 1rem;
+    }
+    &_lines_firstLine,
+    &_lines_secondLine {
+      height: 2px;
+      width: 100%;
+      background-color: aliceblue;
+      margin: 0.8rem 0;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    &_image_container {
+      max-width: 400px;
+    }
+
+    &_title {
+      margin-bottom: 2rem;
+      h1 {
+        font-size: 5rem;
+      }
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 4rem;
+    &_image_container {
+      order: 1;
+      grid-row: unset;
+      max-width: 350px;
+      justify-self: flex-end;
+      align-self: center;
+      margin-bottom: 3rem;
+    }
+    &_title {
+      grid-row: unset;
+      text-align: start;
+      width: 100%;
+      margin-bottom: 2.5rem;
+      h2 {
+        font-size: 2.2rem;
+      }
+      &_lines_firstLine,
+      &_lines_secondLine {
+        width: 13rem;
+        margin: 0.8rem 0;
+      }
+      &_lines_secondLine {
+        margin-left: 5rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-inline: 6rem;
+  }
+  @media screen and (min-width: 1900px) {
+    max-width: 1900px;
+    padding-inline: 10rem;
+    margin-inline: auto;
+    &_image_container {
+      max-width: 450px;
+    }
+    &_title {
+      h1 {
+        font-size: 7rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+      &_lines_firstLine,
+      &_lines_secondLine {
+        width: 18rem;
+      }
+    }
+  }
+}

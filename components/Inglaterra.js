@@ -1,4 +1,4 @@
-import styles from "../styles/flags.module.css";
+import styles from "../styles/flags.module.scss";
 import { langContext } from "../context/langContext";
 import { useContext } from "react";
 

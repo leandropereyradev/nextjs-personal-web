@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import { AnimatePresence } from "framer-motion";
 import { LangProvider } from "../context/langContext";
 import { Header } from "../components/Header";

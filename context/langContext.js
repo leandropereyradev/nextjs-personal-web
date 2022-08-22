@@ -7,7 +7,7 @@ import LangCAT from "../lang/cat.json";
 const langContext = createContext();
 
 const LangProvider = ({ children }) => {
-  let localeDefault = 'es';
+  let localeDefault = "es";
   let msgDefault = LangES;
 
   // const langStorage = () => {

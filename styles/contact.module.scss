@@ -1,0 +1,92 @@
+.contact {
+  display: grid;
+  padding-inline: 2rem;
+  height: 100vh;
+  grid-template-rows: repeat(8, 1fr);
+  text-align: center;
+  h1 {
+    grid-row: 1/3;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    align-self: center;
+  }
+  &_paragraph {
+    grid-row: 3/6;
+    line-height: 1.8rem !important;
+    align-self: center;
+  }
+  &_icons {
+    width: 80%;
+    margin-inline: auto;
+    grid-row: 6/9;
+    align-self: center;
+    &_line {
+      height: 3px;
+      width: 100%;
+      background-color: aliceblue;
+    }
+    &_icons {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      margin: 2rem 0;
+      img {
+        width: 3rem;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: scale(120%);
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 700px) {
+    h1 {
+      font-size: 5rem;
+    }
+    &_paragraph {
+      line-height: 3rem !important;
+      font-size: 2rem;
+    }
+    &_icons {
+      &_icons {
+        margin: 4rem 0;
+        img {
+          width: 4.5rem;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    h1 {
+      padding-top: 4rem;
+    }
+    &_paragraph {
+      width: 60%;
+      margin-inline: auto;
+      font-size: 1.5rem;
+    }
+    &_icons {
+      width: 50%;
+      &_icons {
+        margin: 2.5rem 0;
+      }
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    h1 {
+      font-size: 6rem;
+    }
+    &_paragraph {
+      font-size: 2rem;
+    }
+    &_icons {
+      &_icons {
+        margin: 3.5rem 0;
+        img {
+          width: 6rem;
+        }
+      }
+    }
+  }
+}

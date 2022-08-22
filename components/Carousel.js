@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { FormattedMessage } from "react-intl";
-import styles from "../styles/carousel.module.css";
+import styles from "../styles/carousel.module.scss";
 import { bdPortfolio } from "../pages/api/bdPortfolio";
 import { useEffect, useState } from "react";
 
@@ -40,20 +40,20 @@ const Carousel = () => {
             position = styles.lastSlide;
           }
           return (
-            <article key={id} className={`${position} ${styles.article}`}>
-              <div className={styles.carousel_container}>
-                <div className={styles.carousel_image_container}>
+            <article key={id} className={`${position} ${styles.carousel_center_article}`}>
+              <div className={styles.carousel_center_article_carousel}>
+                <div className={styles.carousel_center_article_carousel_image}>
                   <img src={image} alt="images" />
                 </div>
-                <div className={styles.carousel_titulo}>
+                <div className={styles.carousel_center_article_carousel_titulo}>
                   <h3>{title}</h3>
                   <h5>{subtitle}</h5>
-                  <div className={styles.carousel_contenedor_lineas}>
-                    <div className={styles.carousel_linea_uno} />
-                    <div className={styles.carousel_linea_dos} />
+                  <div className={styles.carousel_center_article_carousel_titulo_lineas}>
+                    <div className={styles.linea_uno} />
+                    <div className={styles.linea_dos} />
                   </div>
                   <h6>{tech}</h6>
-                  <div className={styles.carousel_links}>
+                  <div className={styles.carousel_center_article_carousel_titulo_links}>
                     {web ? (
                       <a
                         href={web}

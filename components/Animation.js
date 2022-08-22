@@ -1,4 +1,4 @@
-import styles from "../styles/animation.module.css";
+import styles from "../styles/animation.module.scss";
 import { motion } from "framer-motion";
 
 const Animation = ({ estado }) => {
@@ -16,9 +16,9 @@ const Animation = ({ estado }) => {
             duration: 2.5,
             ease: "easeOut",
           }}
-          className={styles.animation_container}
+          className={styles.animation}
         >
-          <div className={styles.image_container}>
+          <div className={styles.animation_image}>
             <motion.img
               animate={{
                 scale: [1.5, 1],

@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { FormattedMessage } from "react-intl";
 import Link from "next/link";
-import styles from "../styles/aboutPop.module.css";
+import styles from "../styles/aboutPop.module.scss";
 
 const variants = {
   hidden: { scale: 2, opacity: 0 },
@@ -15,40 +15,52 @@ const variants = {
 
 const AboutPop = () => {
   return (
-    <div className={styles.aboutPop_about}>
-      <h3 className={styles.aboutPop_title}>
+    <div className={styles.aboutPop}>
+      <h3>
         <FormattedMessage id="aboutPop_title" defaultMessage="AboutPop" />
       </h3>
-      <div className={styles.aboutPop_info_container}>
-        <div className={styles.aboutPop_info_title_container}>
-          <h1 className={styles.aboutPop_info_title_title}>
-            <FormattedMessage id="aboutPop_info_title_title" defaultMessage="AboutPop" />
-          </h1>
-          <p className={styles.version}>v1.0 - Trainee</p>
-          <p className={styles.aboutPop_info_title_text}>
+      <h1>
+        <FormattedMessage id="aboutPop_info_title_title" defaultMessage="AboutPop" />
+      </h1>
+      <p>v1.0 - Trainee</p>
+      <div className={styles.aboutPop_info}>
+        <div className={styles.aboutPop_info_father}>
+          <p>
             <FormattedMessage id="aboutPop_info_title_text" defaultMessage="AboutPop" />
           </p>
-          <div className={styles.aboutPop_papa}>
-            <p className={styles.aboutPop_info_title_text}>
+          <div className={styles.aboutPop_info_papa}>
+            <p>
               &quot;
               <FormattedMessage id="aboutPop_info_title_text_dialog" defaultMessage="AboutPop" />
               &quot;
             </p>
             <img src="/images/pap.svg" alt="papa" />
           </div>
-          <p className={styles.aboutPop_info_title_text}>
+          <p>
             <FormattedMessage id="aboutPop_info_title_text_1" defaultMessage="AboutPop" />
           </p>
-          <p className={styles.aboutPop_info_title_text}>
+          <p>
             <FormattedMessage id="aboutPop_info_title_text_2" defaultMessage="AboutPop" />
           </p>
-          <p className={styles.aboutPop_info_title_text}>
+          <p>
             <FormattedMessage id="aboutPop_info_title_text_3" defaultMessage="AboutPop" />
           </p>
+          <p>
+            <FormattedMessage id="aboutPop_info_title_text_4" defaultMessage="AboutPop" />
+          </p>
+          <p>
+            <FormattedMessage id="aboutPop_info_title_text_5" defaultMessage="AboutPop" />
+          </p>
+          <p>
+            <FormattedMessage id="aboutPop_info_title_text_6" defaultMessage="AboutPop" />
+          </p>
+          <p>
+            <FormattedMessage id="aboutPop_info_title_text_7" defaultMessage="AboutPop" />
+          </p>
         </div>
-        <div className={styles.aboutPop_skills_container}>
-          <h3>Skills Trainee</h3>
-          <div className={styles.skill_container}>
+        <div className={styles.aboutPop_skills}>
+          <h2>Skills Trainee</h2>
+          <div className={styles.aboutPop_skills_container}>
             {["react", "nextjs", "mongo", "html5", "css", "js", "wordpress", "tailwind", "git"].map((tec, index) => (
               <motion.img
                 key={index}

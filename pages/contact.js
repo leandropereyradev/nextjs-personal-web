@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { FormattedMessage } from "react-intl";
 import Layout from "../components/Layout";
-import styles from "../styles/contact.module.css";
+import styles from "../styles/contact.module.scss";
 import { contactIcon } from "./api/contactIcons";
 
 const variants = {
@@ -17,26 +17,24 @@ const variants = {
 const Contact = () => {
   return (
     <Layout>
-      <div className={styles.contact_container}>
-        <div className={styles.contact_title}>
-          <motion.h1
-            initial={{
-              scale: 0,
-              opacity: 0,
-            }}
-            animate={{
-              scale: 1,
-              opacity: 1,
-            }}
-            transition={{
-              duration: 0.8,
-              ease: "easeOut",
-              delay: 0.3,
-            }}
-          >
-            <FormattedMessage id="contact_title" defaultMessage="Contact" />
-          </motion.h1>
-        </div>
+      <div className={styles.contact}>
+        <motion.h1
+          initial={{
+            scale: 0,
+            opacity: 0,
+          }}
+          animate={{
+            scale: 1,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+            delay: 0.3,
+          }}
+        >
+          <FormattedMessage id="contact_title" defaultMessage="Contact" />
+        </motion.h1>
         <motion.div
           initial={{
             scale: 0,
@@ -89,7 +87,7 @@ const Contact = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={`/images/${icon}.svg`} alt={icon} className={styles.iconContact} />
+                <img src={`/images/${icon}.svg`} alt={icon} />
               </motion.a>
             ))}
           </div>

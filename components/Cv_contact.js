@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import React from "react";
 
 const variants = {
   hidden: { scale: 1.5, opacity: 0 },

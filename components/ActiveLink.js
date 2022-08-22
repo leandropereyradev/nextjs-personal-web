@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import styles from "../styles/activeLink.module.css";
+import styles from "../styles/activeLink.module.scss";
 
 const ActiveLink = ({ children, href }) => {
   const router = useRouter();

@@ -1,0 +1,158 @@
+.aboutPop {
+  padding-inline: 2rem;
+  padding-top: 3rem;
+  h3 {
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-bottom: 2.5rem !important;
+    text-align: center;
+    line-height: 1.8rem !important;
+  }
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    line-height: 2rem !important;
+  }
+  p {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    margin: 2rem 0;
+    line-height: 1.3rem !important;
+  }
+  &_info {
+    &_papa {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      p {
+        font-style: italic;
+      }
+      img {
+        width: 280px;
+        margin: 2rem 0;
+      }
+    }
+  }
+  &_skills {
+    padding: 2rem 0 4rem 0;
+    h2 {
+      font-size: 1.2rem;
+      text-align: center;
+      padding-bottom: 3.5rem;
+    }
+    &_container {
+      display: grid;
+      grid-template-columns: repeat(3, 3.5rem);
+      gap: 1.5rem;
+      justify-content: center;
+      img {
+        height: 3.5rem;
+        justify-self: center;
+      }
+    }
+  }
+  &_links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    a {
+      border-radius: 5px;
+      padding: 0.4em 0.8em;
+      text-decoration: none;
+      color: #fff;
+      background-color: rgb(255, 0, 149);
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    h3 {
+      font-size: 2rem;
+      line-height: 3rem !important;
+    }
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      padding-bottom: 2rem;
+      line-height: 3.5rem !important;
+    }
+    p {
+      font-size: 1rem;
+      margin: 2rem 0;
+      line-height: 1.6rem !important;
+      text-align: justify;
+    }
+    &_info {
+      &_papa {
+        img {
+          width: 350px;
+        }
+      }
+    }
+    &_skills {
+      h2 {
+        font-size: 2rem;
+      }
+      &_container {
+        display: grid;
+        grid-template-columns: repeat(3, 5rem);
+        gap: 2.5rem;
+        img {
+          height: 5rem;
+        }
+      }
+    }
+    &_links {
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    padding-inline: 4rem;
+    padding-top: 5rem;
+    &_info {
+      &_papa {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        p {
+          font-style: italic;
+        }
+        img {
+          width: 400px;
+          margin: unset;
+          justify-self: center;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    &_skills {
+      &_container {
+        gap: 4rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    &_skills {
+      padding: 6rem 0 8rem 0;
+      h2 {
+        padding-bottom: 5rem;
+        font-size: 3rem;
+      }
+      &_container {
+        grid-template-columns: repeat(3, 7rem);
+        gap: 5rem;
+        img {
+          height: 7rem;
+        }
+      }
+    }
+  }
+}

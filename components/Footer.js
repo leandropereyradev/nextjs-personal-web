@@ -1,9 +1,9 @@
 import { FormattedMessage } from "react-intl";
-import styles from "../styles/footer.module.css";
+import styles from "../styles/footer.module.scss";
 
 const Footer = () => {
   return (
-    <div className={styles.footer_container}>
+    <div className={styles.footer}>
       <p>www.LeandroPereyra.com</p>
       <p>
         Copyright © 2022.{" "}

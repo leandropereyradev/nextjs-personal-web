@@ -1,0 +1,246 @@
+.cv {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 1.5rem;
+  &_title {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 4rem;
+  }
+  &_skills {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(11px) saturate(100%);
+    -webkit-backdrop-filter: blur(11px) saturate(100%);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    padding: 3rem 1rem 1rem 0;
+    ul {
+      padding-left: 2rem;
+      li {
+        list-style: disc;
+        padding-bottom: 0.75rem;
+      }
+    }
+    &_subtitle {
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding-bottom: 1.25rem;
+      text-align: center;
+    }
+  }
+  &_contact {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(11px) saturate(100%);
+    -webkit-backdrop-filter: blur(11px) saturate(100%);
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    padding-top: 3rem;
+    &_link {
+      display: flex;
+      flex-direction: column;
+      &_icons {
+        display: flex;
+        justify-content: space-around;
+        margin: 2.5rem 0;
+        & a:last-child {
+          display: none;
+        }
+
+        & label:last-child {
+          display: none;
+        }
+      }
+      .iconContact,
+      .iconMap {
+        width: 3rem;
+        height: 3rem;
+      }
+      .iconContact {
+        cursor: pointer;
+      }
+    }
+  }
+  &_download {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 4rem 0;
+    & a {
+      border-radius: 5px;
+      padding: 7px 7px;
+      text-decoration: none;
+      color: #fff;
+      background-color: rgb(255, 0, 149);
+      font-size: 1rem;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    &_title {
+      font-size: 5rem;
+      padding: 3rem;
+    }
+    &_skills {
+      width: 85%;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 1rem 1rem;
+      ul {
+        padding-left: 4rem;
+        li {
+          padding-bottom: 1rem;
+          font-size: 1.5rem;
+        }
+      }
+      &_subtitle {
+        font-size: 2rem;
+        padding-bottom: 2.5rem;
+      }
+    }
+    &_contact {
+      margin: 0 auto;
+      width: 85%;
+      padding-top: 3rem;
+      &_link {
+        width: 80%;
+        margin: 3rem auto;
+        .iconContact,
+        .iconMap {
+          width: 4.5rem;
+          height: 4.5rem;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    &_title {
+      padding-top: 6rem;
+    }
+    &_skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 85%;
+      padding: 3rem 2rem 1rem 3.5rem;
+      margin: 2rem auto;
+      ul {
+        padding-left: 1.2rem;
+        li {
+          list-style: disc;
+          padding-bottom: 1.5rem;
+          font-size: 1.2rem;
+        }
+      }
+      &_subtitle {
+        font-size: 1.5rem;
+        text-align: start;
+        padding-bottom: 1rem;
+      }
+    }
+    &_contact {
+      width: 100%;
+      padding: 1.5rem 0 0 0;
+      &_link {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        h2 {
+          text-align: center;
+        }
+        &_icons {
+          width: 100%;
+          margin: 3rem 0;
+          flex-direction: column;
+          & a:last-child {
+            display: block;
+          }
+
+          & label:last-child {
+            display: flex;
+          }
+          label {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 1.5rem;
+            width: 80%;
+            margin: 0 auto;
+            padding-bottom: 1.5rem;
+            a {
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .iconContact,
+        .iconMap {
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+    &_download {
+      & a {
+        padding: 7px 14px;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &_contact {
+      width: 85%;
+      padding: 1.5rem 3rem 0 0;
+      &_link {
+        &_icons {
+          label {
+            a {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+    &_download {
+      & a {
+        font-size: 2rem;
+      }
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    &_title {
+      font-size: 6rem;
+      padding: 4rem;
+    }
+    &_skills {
+      li {
+        padding-bottom: 1.8rem;
+        font-size: 1.5rem;
+      }
+      &_subtitle {
+        font-size: 2rem;
+        padding-bottom: 1.5rem;
+      }
+    }
+    &_contact {
+      width: 85%;
+      &_link {
+        &_icons {
+          label {
+            a {
+              font-size: 1.5rem;
+            }
+          }
+        }
+        .iconContact,
+        .iconMap {
+          width: 3.5rem;
+          height: 3.5rem;
+        }
+      }
+    }
+  }
+}

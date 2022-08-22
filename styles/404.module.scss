@@ -1,0 +1,54 @@
+.notFound {
+  background-color: rgb(19, 19, 19);
+  height: 100vh;
+  &_cloud {
+    padding-top: 3rem;
+    width: 95%;
+    margin: 0 auto;
+  }
+  &_branch {
+    margin: 10rem 0 0 -1rem;
+    width: 300px;
+  }
+  &_totoro {
+    width: 300px;
+    margin: 0 auto;
+    img {
+      position: absolute;
+      width: 300px;
+      bottom: 0;
+    }
+  }
+  @media screen and (min-width: 700px) {
+    &_branch {
+      width: 500px;
+    }
+    &_totoro {
+      width: 600px;
+      img {
+        width: 600px;
+      }
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    &_cloud {
+      padding-top: 4rem;
+    }
+    &_branch {
+      margin: 2rem 0 0 -1rem;
+      width: 400px;
+    }
+  }
+  @media screen and (min-width: 1900px) {
+    &_branch {
+      margin: 0rem 0 0 -1rem;
+      width: 700px;
+    }
+    &_totoro {
+      width: 800px;
+      img {
+        width: 800px;
+      }
+    }
+  }
+}

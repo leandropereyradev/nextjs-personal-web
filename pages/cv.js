@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 /* eslint-disable @next/next/no-img-element */
 import Layout from "../components/Layout";
-import styles from "../styles/cv.module.css";
+import styles from "../styles/cv.module.scss";
 import LineWebs from "../components/LineWebs";
 import { webs } from "./api/lineWebs";
 import { FormattedMessage } from "react-intl";
@@ -13,12 +13,43 @@ import Cv_contact from "../components/Cv_contact";
 const Cv = () => {
   return (
     <Layout>
-      <div className={styles.cv_container}>
-        <h1 className={styles.cv_title}>Curriculum Vitae</h1>
+      <div className={styles.cv}>
+        <motion.h1
+          initial={{
+            scale: 0,
+            opacity: 0,
+          }}
+          animate={{
+            scale: 1,
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+            delay: 0.3,
+          }}
+          className={styles.cv_title}
+        >
+          Curriculum Vitae
+        </motion.h1>
 
         <LineWebs data={webs} title="lineWebs" />
 
-        <div className={styles.cv_skills_container}>
+        <motion.div
+          initial={{
+            opacity: 0,
+          }}
+          whileInView={{
+            opacity: 1,
+          }}
+          viewport={{ once: true, amount: 0 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeOut",
+            delay: 0.3,
+          }}
+          className={styles.cv_skills}
+        >
           <div>
             <h2 className={styles.cv_skills_subtitle}>
               <FormattedMessage id="cv_skills" defaultMessage="Cv" />
@@ -43,29 +74,31 @@ const Cv = () => {
               ))}
             </ul>
           </div>
-        </div>
+        </motion.div>
 
         <LineWebs data={academic} title="lineAcademic" />
 
-        <div className={styles.cv_contact_container}>
-          <div className={styles.cv_link_container}>
+        <div className={styles.cv_contact}>
+          <div className={styles.cv_contact_link}>
             <div className={styles.cv_skills_subtitle_container}>
               <motion.h2
-            initial={{
-              opacity: 0,
-            }}
-            whileInView={{
-              opacity: 1,
-            }}
-            viewport={{ once: true, amount: 0 }}
-            transition={{
-              duration: 0.8,
-              ease: "easeInOut",
-            }} className={styles.cv_skills_subtitle}>
+                initial={{
+                  opacity: 0,
+                }}
+                whileInView={{
+                  opacity: 1,
+                }}
+                viewport={{ once: true, amount: 0 }}
+                transition={{
+                  duration: 0.8,
+                  ease: "easeInOut",
+                }}
+                className={styles.cv_skills_subtitle}
+              >
                 <FormattedMessage id="cv_info_contact" defaultMessage="Cv" />
               </motion.h2>
             </div>
-            <div className={styles.cv_link}>
+            <div className={styles.cv_contact_link_icons}>
               {cvIcons.map((icon, index) => (
                 <Cv_contact
                   key={index}

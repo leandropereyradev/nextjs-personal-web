@@ -1,4 +1,4 @@
-import styles from "../../styles/cv.module.css";
+import styles from "../../styles/cv.module.scss";
 export const cvIcons = [
   {
     href: "https://www.linkedin.com/in/leandropereyradev",
