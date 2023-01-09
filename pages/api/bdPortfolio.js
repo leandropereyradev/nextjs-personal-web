@@ -6,6 +6,7 @@ export const bdPortfolio = [
     title: <FormattedMessage id="wonderghost" defaultMessage="PortDB" />,
     subtitle: <FormattedMessage id="wonderghostSub" defaultMessage="PortDB" />,
     tech: "HTML | CSS | JavaScript",
+    web: "https://wonderghost.leandropereyra.com/",
     github: "https://github.com/leandropereyradev/WonderGhost",
     image: "/images/wonderghost-min.webp",
   },
