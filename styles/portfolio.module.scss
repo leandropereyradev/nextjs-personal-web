@@ -10,20 +10,20 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 0.5rem;
-    &_bienestar {
+    &_wonderghost {
       width: 140px;
       align-self: flex-end;
       justify-self: flex-end;
     }
-    &_alicia {
+    &_peces {
       width: 140px;
       align-self: flex-start;
     }
-    &_yoga {
+    &_listatareas {
       width: 110px;
       align-self: flex-end;
     }
-    &_peces {
+    &_weather {
       width: 110px;
       justify-self: flex-end;
       align-self: flex-start;
@@ -55,16 +55,16 @@
   @media screen and (min-width: 700px) {
     &_image_container {
       gap: 1.5rem;
-      &_bienestar {
+      &_wonderghost {
         width: 220px;
-      }
-      &_alicia {
-        width: 220px;
-      }
-      &_yoga {
-        width: 180px;
       }
       &_peces {
+        width: 220px;
+      }
+      &_listatareas {
+        width: 180px;
+      }
+      &_weather {
         width: 180px;
       }
     }
@@ -87,16 +87,16 @@
     &_image_container {
       order: 1;
       grid-row: unset;
-      &_bienestar {
+      &_wonderghost {
         width: 170px;
-      }
-      &_alicia {
-        width: 170px;
-      }
-      &_yoga {
-        width: 140px;
       }
       &_peces {
+        width: 170px;
+      }
+      &_listatareas {
+        width: 140px;
+      }
+      &_weather {
         width: 140px;
       }
     }
@@ -121,24 +121,38 @@
   @media screen and (min-width: 1200px) {
     padding-inline: 6rem;
   }
+  @media screen and (min-width: 1600px) {
+    &_image_container {
+      &_wonderghost {
+        width: 290px;
+      }
+      &_peces {
+        width: 290px;
+      }
+      &_listatareas {
+        width: 250px;
+      }
+      &_weather {
+        width: 250px;
+      }
+    }
+    &_title {
+      h1 {
+        font-size: 7rem;
+      }
+      h2 {
+        font-size: 3rem;
+      }
+      &_lines_firstLine,
+      &_lines_secondLine {
+        width: 18rem;
+      }
+    }
+  }
   @media screen and (min-width: 1900px) {
     max-width: 1900px;
     padding-inline: 10rem;
     margin-inline: auto;
-    &_image_container {
-      &_bienestar {
-        width: 270px;
-      }
-      &_alicia {
-        width: 270px;
-      }
-      &_yoga {
-        width: 230px;
-      }
-      &_peces {
-        width: 230px;
-      }
-    }
     &_title {
       h1 {
         font-size: 7rem;

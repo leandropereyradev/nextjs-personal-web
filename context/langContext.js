@@ -2,7 +2,6 @@ import { createContext, useState } from "react";
 import { IntlProvider } from "react-intl";
 import LangES from "../lang/es.json";
 import LangEN from "../lang/en.json";
-import LangCAT from "../lang/cat.json";
 
 const langContext = createContext();
 
@@ -48,12 +47,6 @@ const LangProvider = ({ children }) => {
         // localStorage.setItem("lang", "en");
         setLang(LangEN);
         setLocale("en");
-        break;
-
-      case "cat":
-        // localStorage.setItem("lang", "cat");
-        setLang(LangCAT);
-        setLocale("cat");
         break;
 
       default:

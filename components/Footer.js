@@ -6,7 +6,7 @@ const Footer = () => {
     <div className={styles.footer}>
       <p>www.LeandroPereyra.com</p>
       <p>
-        Copyright © 2022.{" "}
+        Copyright © 2023.{" "}
         <span>
           <FormattedMessage id="footer" defaultMessage="All Rights Reserved" />
         </span>

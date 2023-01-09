@@ -22,7 +22,6 @@ const AboutPop = () => {
       <h1>
         <FormattedMessage id="aboutPop_info_title_title" defaultMessage="AboutPop" />
       </h1>
-      <p>v1.0 - Trainee</p>
       <div className={styles.aboutPop_info}>
         <div className={styles.aboutPop_info_father}>
           <p>
@@ -61,7 +60,7 @@ const AboutPop = () => {
         <div className={styles.aboutPop_skills}>
           <h2>Skills Trainee</h2>
           <div className={styles.aboutPop_skills_container}>
-            {["react", "nextjs", "mongo", "html5", "css", "js", "wordpress", "tailwind", "git"].map((tec, index) => (
+            {["react", "nextjs", "mongo", "html5", "css", "js", "wordpress", "git"].map((tec, index) => (
               <motion.img
                 key={index}
                 variants={variants}

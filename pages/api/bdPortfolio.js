@@ -3,11 +3,11 @@ import { FormattedMessage } from "react-intl";
 export const bdPortfolio = [
   {
     id: 1,
-    title: <FormattedMessage id="bienestar" defaultMessage="PortDB" />,
-    subtitle: <FormattedMessage id="bienestarSub" defaultMessage="PortDB" />,
-    tech: "Next.JS | Tailwind",
-    github: "https://github.com/leandropereyradev/yogaypilates-en_desarrollo",
-    image: "/images/bienestar-min.webp",
+    title: <FormattedMessage id="wonderghost" defaultMessage="PortDB" />,
+    subtitle: <FormattedMessage id="wonderghostSub" defaultMessage="PortDB" />,
+    tech: "HTML | CSS | JavaScript",
+    github: "https://github.com/leandropereyradev/WonderGhost",
+    image: "/images/wonderghost-min.webp",
   },
   {
     id: 2,
@@ -43,29 +43,5 @@ export const bdPortfolio = [
     web: "https://weatherapp.leandropereyra.com/",
     github: "https://github.com/leandropereyradev/weather-app",
     image: "/images/weather-min.webp",
-  },
-  {
-    id: 6,
-    title: "Celia Martín Pérez",
-    subtitle: <FormattedMessage id="celia" defaultMessage="PortDB" />,
-    tech: "WordPress self-managed",
-    web: "https://celiamartinperez.com/",
-    image: "/images/celiamartinperez-min.webp",
-  },
-  {
-    id: 7,
-    title: "El Menú de Alicia",
-    subtitle: <FormattedMessage id="alicia" defaultMessage="PortDB" />,
-    tech: "WordPress self-managed",
-    web: "https://elmenudealicia.es/",
-    image: "/images/elmenudealicia-min.webp",
-  },
-  {
-    id: 8,
-    title: "Bienestar",
-    subtitle: <FormattedMessage id="yoga" defaultMessage="PortDB" />,
-    tech: "WordPress",
-    web: "https://yogaypilatesoviedo.com/",
-    image: "/images/yogaypilatesoviedo-min.webp",
   },
 ];

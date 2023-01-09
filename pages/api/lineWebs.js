@@ -21,12 +21,6 @@ export const webs = [
     title: "webs16",
     date: "webs17",
     subtitle: "webs18",
-    tec: ["webs19"],
-  },
-  {
-    title: "webs20",
-    date: "webs21",
-    subtitle: "webs22",
-    tec: ["webs23"],
+    tec: ["webs19", "webs20"],
   },
 ];

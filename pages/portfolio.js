@@ -93,9 +93,9 @@ const Portfolio = () => {
               ease: "easeOut",
               delay: 0.3,
             }}
-            className={styles.portfolio_image_container_bienestar}
-            alt="bienestar"
-            src="/images/bienestar-min.webp"
+            className={styles.portfolio_image_container_wonderghost}
+            alt="wonderghost"
+            src="/images/wonderghost-min.webp"
           />
           <motion.img
             initial={{
@@ -111,9 +111,9 @@ const Portfolio = () => {
               ease: "easeOut",
               delay: 0.7,
             }}
-            src="/images/yogaypilatesoviedo-min.webp"
-            alt="yoga"
-            className={styles.portfolio_image_container_yoga}
+            src="/images/listatareas-min.webp"
+            alt="listatareas"
+            className={styles.portfolio_image_container_listatareas}
           />
           <motion.img
             initial={{
@@ -129,9 +129,9 @@ const Portfolio = () => {
               ease: "easeOut",
               delay: 0.9,
             }}
-            src="/images/peces-min.webp"
-            alt="peces"
-            className={styles.portfolio_image_container_peces}
+            src="/images/weather-min.webp"
+            alt="weather"
+            className={styles.portfolio_image_container_weather}
           />
           <motion.img
             initial={{
@@ -147,9 +147,9 @@ const Portfolio = () => {
               ease: "easeOut",
               delay: 0.5,
             }}
-            src="/images/elmenudealicia-min.webp"
-            alt="alicia"
-            className={styles.portfolio_image_container_alicia}
+            src="/images/peces-min.webp"
+            alt="peces"
+            className={styles.portfolio_image_container_peces}
           />
         </div>
       </div>
